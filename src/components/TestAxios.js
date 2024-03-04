@@ -14,7 +14,8 @@ const TestAxios = ({ url }) => {
     <button onClick={fetchData} data-testid="fetch-data">Load Data</button>
     { 
     data ?
-    <div data-testid="show-data">{data}</div>:
+    <div data-testid="show-data">{data}</div>
+    :
     <h1 data-testid="loading">Loading...</h1>
     }
   </>
